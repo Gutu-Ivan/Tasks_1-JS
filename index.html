@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Chess</p>
+        <div class="field"></div>
+        <div class="tasks">
+            <div class="list__main">
+                <ol>Frameworks:
+                    <li>Angular</li>
+                    <li>Vue</li>
+                    <li>React</li>
+                </ol>
+                <div class="list__body">
+                    <input type="text" class="txt" onkeyup="tasks.checkValue()">
+                    <input type="button" class="btn" value="Add" onclick="tasks.addToList()" disabled>
+                </div>
+            </div>
+            <div class="table">
+                <table id="users" style="width:100%">
+                    <tr>
+                        <th style="width: 90%;">Name</th>
+                        <th style="width: 10%"></th>
+                    </tr>
+                    <tr>
+                        <td>User</td>
+                        <td><input type="button" onclick="tasks.deleteRow(this)" value="Remove"></td>
+                    </tr>
+                    <tr>
+                        <td>Admin</td>
+                        <td><input type="button" onclick="tasks.deleteRow(this)" value="Remove"></td>
+                    </tr>
+                </table>
+                <div class="input__form" style="width: 100%">
+                    <input type="text" class="user" style="width: 70%">
+                    <input type="button" style="width: 25%; background-color: chartreuse;" onclick="tasks.addRow()" value="Add">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
